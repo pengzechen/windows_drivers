@@ -1,0 +1,16 @@
+﻿  Building '5.DriverTimer' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Buffer.c
+  FilterDevice.c
+  RWCdevice.c
+  DriverMain.c
+  Timer.c
+Timer.c(10): warning C4459: “dpc”的声明隐藏了全局声明
+  Timer.c(8): note: 参见“dpc”的声明
+  正在生成代码...
+  5.DriverTimer.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\5.DriverTimer\Debug\5.DriverTimer.sys
+  5.DriverTimer.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\5.DriverTimer\Debug\5.DriverTimer.pdb (Full PDB)
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Administrator\Documents\Visual Studio 2015\Projects\5.DriverTimer\Debug\5.DriverTimer.sys
+  
+  Inf2Cat task was skipped as there were no inf files to process
+  

@@ -1,0 +1,12 @@
+﻿  Building '6.DeviceAttach' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  DriverMain.c
+  FilterDevice.c
+FilterDevice.c(206): warning C4101: “stack”: 未引用的局部变量
+  正在生成代码...
+  6.DeviceAttach.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\6.DeviceAttach\x64\Debug\6.DeviceAttach.sys
+  6.DeviceAttach.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\6.DeviceAttach\x64\Debug\6.DeviceAttach.pdb (Full PDB)
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Administrator\Documents\Visual Studio 2015\Projects\6.DeviceAttach\x64\Debug\6.DeviceAttach.sys
+  
+  Inf2Cat task was skipped as there were no inf files to process
+  

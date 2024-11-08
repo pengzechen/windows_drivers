@@ -1,0 +1,9 @@
+﻿  Building '1.DriverHelloWorld' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  DriverMain.c
+  1.DriverHelloWorld.vcxproj -> c:\users\administrator\documents\visual studio 2015\Projects\1.DriverHelloWorld\Debug\1.DriverHelloWorld.sys
+  1.DriverHelloWorld.vcxproj -> c:\users\administrator\documents\visual studio 2015\Projects\1.DriverHelloWorld\Debug\1.DriverHelloWorld.pdb (Full PDB)
+  Done Adding Additional Store
+  Successfully signed: c:\users\administrator\documents\visual studio 2015\Projects\1.DriverHelloWorld\Debug\1.DriverHelloWorld.sys
+  
+  Inf2Cat task was skipped as there were no inf files to process
+  

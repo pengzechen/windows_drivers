@@ -1,0 +1,9 @@
+﻿  Building '3.DriverIoControl' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  DriverMain.c
+  3.DriverIoControl.vcxproj -> c:\users\administrator\documents\visual studio 2015\Projects\3.DriverIoControl\Debug\3.DriverIoControl.sys
+  3.DriverIoControl.vcxproj -> c:\users\administrator\documents\visual studio 2015\Projects\3.DriverIoControl\Debug\3.DriverIoControl.pdb (Full PDB)
+  Done Adding Additional Store
+  Successfully signed: c:\users\administrator\documents\visual studio 2015\Projects\3.DriverIoControl\Debug\3.DriverIoControl.sys
+  
+  Inf2Cat task was skipped as there were no inf files to process
+  

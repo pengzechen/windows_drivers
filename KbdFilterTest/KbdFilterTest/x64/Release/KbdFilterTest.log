@@ -1,0 +1,11 @@
+﻿  Building 'KbdFilterTest' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  DriverMain.c
+DriverMain.c(19): error C2220: 警告被视为错误 - 没有生成“object”文件
+DriverMain.c(19): warning C4100: “DriverObject”: 未引用的形参
+DriverMain.c(37): warning C4100: “DeviceObject”: 未引用的形参
+DriverMain.c(54): warning C4242: “初始化”: 从“ULONG_PTR”转换到“int”，可能丢失数据
+DriverMain.c(49): warning C4100: “Context”: 未引用的形参
+DriverMain.c(47): warning C4100: “DeviceObject”: 未引用的形参
+DriverMain.c(73): warning C4100: “DeviceObject”: 未引用的形参
+DriverMain.c(86): warning C4100: “SourceDevice”: 未引用的形参
+DriverMain.c(113): warning C4101: “symbolicLinkName”: 未引用的局部变量

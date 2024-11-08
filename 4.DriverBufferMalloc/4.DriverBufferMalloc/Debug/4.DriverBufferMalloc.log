@@ -1,0 +1,11 @@
+﻿  Building '4.DriverBufferMalloc' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Buffer.c
+  DriverMain.c
+  正在生成代码...
+  4.DriverBufferMalloc.vcxproj -> c:\users\administrator\documents\visual studio 2015\Projects\4.DriverBufferMalloc\Debug\4.DriverBufferMalloc.sys
+  4.DriverBufferMalloc.vcxproj -> c:\users\administrator\documents\visual studio 2015\Projects\4.DriverBufferMalloc\Debug\4.DriverBufferMalloc.pdb (Full PDB)
+  Done Adding Additional Store
+  Successfully signed: c:\users\administrator\documents\visual studio 2015\Projects\4.DriverBufferMalloc\Debug\4.DriverBufferMalloc.sys
+  
+  Inf2Cat task was skipped as there were no inf files to process
+  

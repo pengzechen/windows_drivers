@@ -1,0 +1,9 @@
+﻿  Building '2.DriverIo' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  DriverMain.c
+  2.DriverIo.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2.DriverIo\Debug\2.DriverIo.sys
+  2.DriverIo.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2.DriverIo\Debug\2.DriverIo.pdb (Full PDB)
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2.DriverIo\Debug\2.DriverIo.sys
+  
+  Inf2Cat task was skipped as there were no inf files to process
+  
