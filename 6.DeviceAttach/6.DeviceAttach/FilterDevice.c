@@ -1,6 +1,8 @@
 
 #include "FilterDevice.h"
 
+ULONG PendingCount = 0;
+
 // 需要上层传递一个 driver 指针
 static NTSTATUS DeviceInit(PDRIVER_OBJECT pDriver)
 {
@@ -18,6 +20,15 @@ static NTSTATUS DeviceDelete(PDRIVER_OBJECT pDriver)
 	{
 		DeAttach(pDevice);
 		pDevice = pDevice->NextDevice;
+	}
+
+	LARGE_INTEGER lDelay = { 0 };
+	lDelay.QuadPart = -10 * 1000 * 500;
+
+	KdPrintEx((77, 0, "DriverUnload PendingCount is %d\n", PendingCount));
+	while (PendingCount) {
+		KdPrintEx((77, 0, "KeDelayExecutionThread PendingCount is %d\n", PendingCount));
+		KeDelayExecutionThread(KernelMode, FALSE, &lDelay);
 	}
 
 	pDriver->DeviceObject = NULL;
@@ -79,7 +90,7 @@ BOOLEAN CancelIrp(PIRP pIrp)
 static VOID DeAttach(PDEVICE_OBJECT pDevice)
 {
 	DbgPrintEx(77, 0, "[db]: deattach: %p\r\n", pDevice);
-	DbgBreakPoint();
+	// DbgBreakPoint();
 	PDEV_EXTENSION devExt;
 	devExt = (PDEV_EXTENSION)pDevice->DeviceExtension;
 
@@ -193,6 +204,8 @@ static NTSTATUS ReadComp(PDEVICE_OBJECT DeviceObject, PIRP pIrp, PVOID Context)
 	{
 		IoMarkIrpPending(pIrp);
 	}
+
+	PendingCount--;
 	return pIrp->IoStatus.Status;
 }
 
@@ -223,6 +236,7 @@ static NTSTATUS FilterDeviceRead(PDEVICE_OBJECT pDevice, PIRP pIrp)
 	IoCopyCurrentIrpStackLocationToNext(pIrp);
 	// 设置irp完成回调
 	IoSetCompletionRoutine(pIrp, ReadComp, pDevice, TRUE, TRUE, TRUE);
+	PendingCount++;
 	// 调用下一层的函数
 	return IoCallDriver(lowDevice, pIrp);
 }
